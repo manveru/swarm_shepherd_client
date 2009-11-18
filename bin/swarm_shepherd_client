@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'em-jack'
+require 'json'
+require 'securerandom'
+
+require_relative '../lib/swarm_shepherd_client'
+
+EM.run do
+  Engine.new
+  Client.new
+end
