@@ -1,0 +1,26 @@
+@import compass/reset.sass
+@import compass/utilities.sass
+@import blueprint/screen.sass
+@import blueprint/modules/grid.sass
+@import blueprint/modules/scaffolding.sass
+@import blueprint/modules/form.sass
+
++blueprint-typography("body.blueprint")
+
+body.blueprint
+  +blueprint-scaffolding
+  .container
+    +container
+  form
+    +blueprint-form
+
+#page
+  :background #fafafa
+  +column(24)
+  h2, h1
+    :text-align center
+  #top-navigation
+    +column(24)
+    li
+      +column(2)
+      :text-align center
