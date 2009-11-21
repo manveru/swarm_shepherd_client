@@ -7,5 +7,5 @@ require 'securerandom'
 require 'swarm_shepherd_client'
 
 EM.run do
-  Client.new
+  Engine.new
 end
