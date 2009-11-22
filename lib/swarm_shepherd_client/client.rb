@@ -42,10 +42,10 @@ class Client
   end
 
   def main
-    p :main
+    @out.jput(command: 'select_home')
   end
 
   def got_job(job)
-    p client_got_job: job
+    p client_got_job: job.jbody.map{|marshal| Marshal.load(marshal) }
   end
 end
